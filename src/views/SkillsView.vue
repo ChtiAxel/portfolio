@@ -5,12 +5,6 @@ import { useLocale } from '../i18n'
 
 const { t } = useLocale()
 
-const approach = computed(() => [
-  { title: t('skills.approachNeedTitle'), text: t('skills.approachNeedText'), mark: '◎' },
-  { title: t('skills.approachWholeTitle'), text: t('skills.approachWholeText'), mark: '↗' },
-  { title: t('skills.approachBuildTitle'), text: t('skills.approachBuildText'), mark: '✳' },
-])
-
 const stacks = computed(() => [
   { title: t('skills.webTitle'), text: t('skills.webText'), technologies: ['Vue 3', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Vite'] },
   { title: t('skills.appTitle'), text: t('skills.appText'), technologies: ['Python', 'PHP', 'C / C++', 'Dart', 'API REST', 'Socket.IO'] },
@@ -28,26 +22,12 @@ const stacks = computed(() => [
         <p class="skills-hero-intro">{{ t('skills.intro') }}</p>
       </div>
       <aside class="skills-signature-card">
-        <span class="skills-signature-mark" aria-hidden="true">AN<span>.</span></span>
+        <span class="skills-signature-orbit" aria-hidden="true"></span>
         <p class="eyebrow">{{ t('skills.mottoLabel') }}</p>
         <p class="skills-signature-quote">{{ t('skills.motto') }}</p>
         <RouterLink to="/projets" class="skills-project-link">{{ t('skills.projectLink') }} <span aria-hidden="true">↗</span></RouterLink>
       </aside>
     </header>
-
-    <section class="skills-approach" aria-labelledby="approach-heading">
-      <div class="skills-section-heading">
-        <p class="eyebrow">{{ t('skills.approachKicker') }}</p>
-        <h2 id="approach-heading">{{ t('skills.approachHeading') }}</h2>
-      </div>
-      <div class="skills-approach-grid">
-        <article v-for="item in approach" :key="item.title" class="skills-approach-item">
-          <span class="skills-approach-mark" aria-hidden="true">{{ item.mark }}</span>
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.text }}</p>
-        </article>
-      </div>
-    </section>
 
     <section class="skills-stack-section" aria-labelledby="stack-heading">
       <div class="skills-section-heading skills-stack-heading">
@@ -65,14 +45,5 @@ const stacks = computed(() => [
         </article>
       </div>
     </section>
-
-    <aside class="skills-now">
-      <span class="skills-now-dot" aria-hidden="true"></span>
-      <div>
-        <p class="eyebrow">{{ t('skills.nowLabel') }}</p>
-        <p>{{ t('skills.nowText') }}</p>
-      </div>
-      <RouterLink to="/contact" class="skills-project-link">{{ t('skills.contactLink') }} <span aria-hidden="true">↗</span></RouterLink>
-    </aside>
   </section>
 </template>
