@@ -29,11 +29,9 @@ html[lang="es"] .projects-page .page-heading h1{font-size:clamp(32px,7vw,68px);w
 .skills-hero h1{max-width:720px;font-size:clamp(54px,8vw,98px);line-height:.94;letter-spacing:-.075em;font-weight:500;margin:0 0 28px}
 .skills-hero-intro{max-width:620px;margin:0;color:var(--muted);font-size:clamp(16px,1.7vw,19px);line-height:1.8}
 .skills-signature-card{position:relative;isolation:isolate;min-height:275px;padding:30px 32px;background:#dbe0d1;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
-.skills-signature-orbit{position:absolute;z-index:0;top:24px;right:26px;width:66px;height:66px;border:1px solid #829078;border-radius:50%;background:radial-gradient(circle at center,#e7663f 0 3px,transparent 4px)}
-.skills-signature-card>*:not(.skills-signature-orbit){position:relative;z-index:1}
-.skills-signature-card .eyebrow{position:relative;margin:0 0 12px;color:#5c6655}
-.skills-signature-quote{position:relative;max-width:300px;font:clamp(22px,2.6vw,31px)/1.14 var(--serif);letter-spacing:-.025em;margin:0 0 24px;color:var(--ink);overflow-wrap:break-word}
-.skills-project-link{position:relative;display:inline-flex;align-items:center;gap:12px;width:max-content;border-bottom:1px solid currentColor;padding:0 0 7px;font-size:13px}
+.skills-signature-card .eyebrow{position:relative;z-index:1;margin:0 0 12px;color:#5c6655}
+.skills-signature-quote{position:relative;z-index:1;max-width:300px;font:clamp(22px,2.6vw,31px)/1.14 var(--serif);letter-spacing:-.025em;margin:0 0 24px;color:var(--ink);overflow-wrap:break-word}
+.skills-project-link{position:relative;z-index:1;display:inline-flex;align-items:center;gap:12px;width:max-content;border-bottom:1px solid currentColor;padding:0 0 7px;font-size:13px}
 .skills-project-link span{color:var(--orange);font-size:16px}
 .skills-stack-section{padding:58px 0 24px}
 .skills-section-heading{display:grid;grid-template-columns:minmax(180px,.55fr) 1.45fr;gap:30px;align-items:start;margin-bottom:30px}
@@ -50,4 +48,4 @@ html[lang="es"] .projects-page .page-heading h1{font-size:clamp(32px,7vw,68px);w
 .skills-tags{display:flex;flex-wrap:wrap;gap:8px;margin:19px 0 0;padding:0;list-style:none}
 .skills-tags li{padding:7px 10px;border:1px solid #20231f22;border-radius:2px;background:#f4f1ea90;color:#373a34;font-size:12px}
 @media(max-width:800px){.skills-hero{grid-template-columns:minmax(0,1fr) minmax(220px,.8fr);gap:28px;padding-bottom:52px}.skills-signature-card{min-height:245px;padding:24px}.skills-section-heading{grid-template-columns:1fr;gap:13px}.skills-section-heading .eyebrow{margin:0}}
-@media(max-width:620px){.skills-page{padding-bottom:58px}.skills-hero{grid-template-columns:1fr;gap:28px;padding-top:4px;padding-bottom:38px}.skills-hero h1{font-size:clamp(48px,13vw,70px);margin-bottom:18px}.skills-hero-copy .eyebrow{margin-bottom:18px}.skills-signature-card{min-height:220px}.skills-signature-orbit{top:20px;right:21px;width:54px;height:54px}.skills-stack-section{padding-top:40px}.skills-stack-grid{grid-template-columns:1fr}.skills-stack-card{min-height:0;padding:23px}.skills-stack-card>p{min-height:0}.skills-stack-card h3{margin-top:18px}.skills-tags{margin-top:14px}}
+@media(max-width:620px){.skills-page{padding-bottom:58px}.skills-hero{grid-template-columns:1fr;gap:28px;padding-top:4px;padding-bottom:38px}.skills-hero h1{font-size:clamp(48px,13vw,70px);margin-bottom:18px}.skills-hero-copy .eyebrow{margin-bottom:18px}.skills-signature-card{min-height:220px}.skills-stack-section{padding-top:40px}.skills-stack-grid{grid-template-columns:1fr}.skills-stack-card{min-height:0;padding:23px}.skills-stack-card>p{min-height:0}.skills-stack-card h3{margin-top:18px}.skills-tags{margin-top:14px}}
